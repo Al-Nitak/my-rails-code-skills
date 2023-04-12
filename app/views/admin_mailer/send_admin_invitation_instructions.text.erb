@@ -1,0 +1,3 @@
+Hello <%= @admin.name %>
+Please click the link below in order to create your account.
+<%= "#{ENV['ADMIN_DOMAIN_URL']}/confirmations/#{@admin.confirmation_token}" %>

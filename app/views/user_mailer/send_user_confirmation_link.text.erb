@@ -1,0 +1,3 @@
+Hello <%= @user.name %>
+Please click the link below in order to confirm your account.
+<%= "#{ENV['SITE_DOMAIN_URL']}/confirm-profile/#{@user.confirmation_token}" %>
